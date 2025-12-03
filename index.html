@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEF YAPI DESIGN - Kalite, Estetik ve Mühendislik</title>
+    <!-- Favicon img -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- Bootstarp min css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Mean menu css -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!-- All min css -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Swiper bundle min css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Magnigic popup css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Nice select css -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style-v6.css">
+</head>
+
+<body>
+
+    <!-- Preloader area start -->
+    <div class="loading">
+        <span class="text-capitalize">Y</span>
+        <span>ü</span>
+        <span>k</span>
+        <span>l</span>
+        <span>e</span>
+        <span>n</span>
+        <span>i</span>
+        <span>y</span>
+        <span>o</span>
+        <span>r</span>
+    </div>
+    <div id="preloader">
+    </div>
+    <!-- Preloader area end -->
+
+    <!-- Mouse cursor area start here -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <!-- Mouse cursor area end here -->
+
+    <!-- Header area start here -->
+    <header class="header-area">
+        <div class="container header__container">
+            <div class="header__main">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo/logo.png" alt="BEF Yapı Design Logo">
+                </a>
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">ANA SAYFA</a></li>
+                            <li><a href="about.html">HAKKIMIZDA</a></li>
+                            <li><a href="contact.html">İLETİŞİM</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="bars d-block d-lg-none">
+                    <i id="openButton" class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header area end here -->
+
+    <!-- Sidebar area start here -->
+    <div id="targetElement" class="sidebar-area sidebar__hide">
+        <div class="sidebar__overlay"></div>
+        <a href="index.html" class="logo mb-40">
+            <img src="assets/images/logo/logo.png" alt="BEF Yapı Design Logo">
+        </a>
+        
+        <div class="mobile-menu overflow-hidden"></div>
+        <ul class="info pt-40">
+            <li><i class="fa-solid primary-color fa-location-dot"></i> <a href="#0">info@befyapidesign.com</a>
+            </li>
+            <li class="py-2"><i class="fa-solid primary-color fa-phone-volume"></i> <a
+                    href="tel:+90 212 555 5555">+90 212 555 5555</a>
+            </li>
+            <li><i class="fa-solid primary-color fa-paper-plane"></i> <a href="#0">iletisim@befyapidesign.com</a></li>
+        </ul>
+        <button id="closeButton" class="text-white"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <!-- Sidebar area end here -->
+
+    <!-- Fullscreen search area start here -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Fullscreen search area end here -->
+
+    <main>
+        <!-- Banner area start here -->
+        <section class="banner-area">
+            <div class="banner__line">
+                <img class="sway__animation" src="assets/images/banner/banner-line.png" alt="shape">
+            </div>
+            <div class="swiper banner__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div data-animation="slideInLeft" data-duration="2s" data-delay=".3s"
+                            class="banner__shape-left2">
+                            <img src="assets/images/banner/banner-regular-left-shape.png" alt="shape">
+                        </div>
+                        <div data-animation="slideInLeft" data-duration="2s" data-delay=".9s"
+                            class="banner__shape-left1">
+                            <img src="assets/images/banner/banner-solid-left-shape.png" alt="shape">
+                        </div>
+                        <div class="banner__shape-left3 wow slideInLeft">
+                            <img class="sway__animation" src="assets/images/banner/banner-shape-left.png" alt="shape">
+                        </div>
+                        <div class="banner__shape-right2" data-animation="slideInRight" data-duration="3s"
+                            data-delay=".3s">
+                            <img src="assets/images/banner/banner-shape-right-line.png" alt="shape">
+                        </div>
+                        <div class="banner__shape-right1" data-animation="slideInRight" data-duration="2s"
+                            data-delay=".3s">
+                            <img src="assets/images/banner/banner-shape-right.png" alt="shape">
+                        </div>
+                        <div class="banner__right-line1" data-animation="slideInRight" data-duration="2s"
+                            data-delay=".9s">
+                            <img src="assets/images/banner/banner-right-line1.png" alt="shape">
+                        </div>
+                        <div class="banner__right-line2" data-animation="slideInRight" data-duration="2s"
+                            data-delay=".7s">
+                            <img src="assets/images/banner/banner-right-line2.png" alt="shape">
+                        </div>
+                        <div class="banner__right-line3" data-animation="slideInRight" data-duration="2s"
+                            data-delay=".5s">
+                            <img src="assets/images/banner/banner-right-line3.png" alt="shape">
+                        </div>
+                        <div class="banner__right-line4" data-animation="slideInRight" data-duration="2s"
+                            data-delay=".3s">
+                            <img src="assets/images/banner/banner-right-line4.png" alt="shape">
+                        </div>
+                        <div class="slide-bg" data-background="photo/index/construction-banner.jpg"></div>
+                        <div class="container">
+                            <div class="banner__content">
+                                <h4 data-animation="slideInRight" data-duration="2s" data-delay=".3s"
+                                    class="text-white mb-20">
+                                    BEF YAPI DESIGN
+                                </h4>
+                                <h1 data-animation="slideInRight" data-duration="2s" data-delay=".5s"
+                                    class="text-white">
+                                    Kalite, Estetik ve Mühendisliği
+                                    Bir Araya Getiriyoruz
+                                </h1>
+                                <p data-animation="slideInRight" data-duration="2s" data-delay=".7s" class="mt-20">
+                                    Modern yaşam alanları oluşturan yenilikçi bir inşaat ve tasarım firması olarak,
+                                    <br>
+                                    sürdürülebilirlik, güvenilirlik ve müşteri memnuniyetini temel ilke ediniyoruz.
+                                </p>
+                                <a data-animation="slideInRight" data-duration="2s" data-delay=".9s" href="about.html"
+                                    class="btn-one mt-60">Bizi Tanıyın <i class="fa-regular fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="banner__dot-wrp">
+                <div class="dot-light banner__dot"></div>
+            </div>
+        </section>
+        <!-- Banner area end here -->
+
+        <!-- Service area start here -->
+        <section class="service-area pt-120 pb-120">
+            <div class="service__shape wow slideInRight">
+                <img class="sway_Y__animation" src="assets/images/shape/service-bg-shape.png" alt="shape">
+            </div>
+            <div class="container">
+                <div class="d-flex flex-wrap gap-4 align-items-center justify-content-between mb-60">
+                    <div class="section-header">
+                        <h5 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            
+                            Kapsamlı Çözümler
+                        </h5>
+                        <h2 class="wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">Konut, Ticari Yapı, İç Mimari
+                            ve Tadilat Projeleri</h2>
+                    </div>
+                    <a href="about.html" class="btn-one wow fadeInUp" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">Hakkımızda <i class="fa-regular fa-arrow-right-long"></i></a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow bounceInUp" data-wow-delay="00ms" data-wow-duration="1000ms">
+                        <div class="service__item">
+                            <div class="service-shape">
+                                <img src="assets/images/shape/service-item-shape.png" alt="shape">
+                            </div>
+                            <div class="service__icon">
+                                <img src="assets/images/icon/service-icon1.png" alt="icon">
+                            </div>
+                            <h4><a href="about.html">Konut Projeleri</a></h4>
+                            <p>Çağdaş mimari yaklaşımları ileri teknolojiyle birleştirerek, fonksiyonel ve estetik konut alanları tasarlıyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                        <div class="service__item active">
+                            <div class="service-shape">
+                                <img src="assets/images/shape/service-item-shape.png" alt="shape">
+                            </div>
+                            <div class="service__icon">
+                                <img src="assets/images/icon/service-icon2.png" alt="icon">
+                            </div>
+                            <h4><a href="about.html">Ticari Yapılar</a></h4>
+                            <p>Proje yönetiminden anahtar teslim uygulamalara kadar yüksek standartlarla ticari yapı projeleri gerçekleştiriyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow bounceInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                        <div class="service__item">
+                            <div class="service-shape">
+                                <img src="assets/images/shape/service-item-shape.png" alt="shape">
+                            </div>
+                            <div class="service__icon">
+                                <img src="assets/images/icon/service-icon3.png" alt="icon">
+                            </div>
+                            <h4><a href="about.html">İç Mimari & Tadilat</a></h4>
+                            <p>Kullanıcıların ihtiyaçlarına en uygun, kaliteli ve uzun ömürlü iç mekan dönüşümleri yapıyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service area end here -->
+
+        <!-- HAKKIMIZDA area start here -->
+        <section class="about-area sub-bg pt-120">
+            <div class="about__shape wow slideInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <img src="assets/images/shape/about-line.png" alt="shape">
+            </div>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="about__left-item">
+                            <div class="image big-image">
+                                <img src="photo/about/construction-about1.jpg" alt="image">
+                            </div>
+                            <div class="image sm-image">
+                                <img src="photo/about/construction-about2.jpg" alt="image">
+                            </div>
+                            <div class="circle-shape">
+                                <img src="assets/images/shape/about-circle.png" alt="shape">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="section-header mb-40">
+                            <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                
+                                HAKKIMIZDA
+                            </h5>
+                            <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Çağdaş Mimari Yaklaşım
+                                ve İleri Teknoloji</h2>
+                            <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">BEF Yapı Design, kalite, estetik ve mühendisliği bir araya getirerek modern yaşam alanları oluşturan yenilikçi bir inşaat ve tasarım firmasıdır. Uzman mühendis ve tasarım ekibimizle her projeyi titizlikle planlıyor, fonksiyonel, dayanıklı ve estetik yapılar üretiyoruz.</p>
+                        </div>
+                        <div class="row g-4 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="col-md-6">
+                                <div class="about__right-item">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/about-icon1.png" alt="icon">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="mb-1">Sürdürülebilir Tasarım</h4>
+                                        <p>Çevre dostu ve uzun ömürlü yapılar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about__right-item">
+                                    <div class="icon">
+                                        <img src="assets/images/icon/about-icon2.png" alt="icon">
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="mb-1">Şeffaf İletişim</h4>
+                                        <p>Proje süreçlerinde açık ve güvenilir iletişim</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__info mt-50 wow fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
+                            <a href="about.html" class="btn-one">Hakkımızda <i
+                                    class="fa-regular fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HAKKIMIZDA area end here -->
+
+        <!-- Offer area start here -->
+        <section class="offer-area secondary-bg pt-120 pb-200">
+            <div class="offer__shadow wow fadeIn" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <img src="assets/images/shape/offer-shadow-shape.png" alt="shadow">
+            </div>
+            <div class="offer__shape-left">
+                <img class="wow fadeInUpBig" data-wow-delay="400ms" data-wow-duration="1500ms"
+                    src="assets/images/shape/offer-bg-shape-left.png" alt="shape">
+            </div>
+            <div class="offer__shape-right">
+                <img class="wow fadeInDownBig" data-wow-delay="400ms" data-wow-duration="1500ms"
+                    src="assets/images/shape/offer-bg-shape-right.png" alt="shape">
+            </div>
+            <div class="container">
+                <div class="d-flex gap-4 flex-wrap align-items-center justify-content-between mb-95">
+                    <div class="section-header">
+                        <h5 class="text-white wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            
+                            Uzmanlık Alanlarımız
+                        </h5>
+                        <h2 class="text-white wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">Profesyonel Ekip, 
+                            Kaliteli Malzeme, Yüksek Standartlar</h2>
+                    </div>
+                    <a href="about.html" class="btn-one wow fadeInUp" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">Hakkımızda <i class="fa-regular fa-arrow-right-long"></i></a>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="00ms"
+                        data-wow-duration="1500ms">
+                        <div class="offer__item">
+                            <div class="shape-top">
+                                <img src="assets/images/shape/offter-item-shape-top.png" alt="shape">
+                            </div>
+                            <div class="shape-bottom">
+                                <img src="assets/images/shape/offter-item-shape-bottom.png" alt="shape">
+                            </div>
+                            <div class="offer__icon">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 34H34M6 34V14L18 4L30 14V34M12 34V24H24V34M12 20H12.01M24 20H24.01" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-white mt-20">Konut İnşaatı</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="100ms"
+                        data-wow-duration="1500ms">
+                        <div class="offer__item">
+                            <div class="shape-top">
+                                <img src="assets/images/shape/offter-item-shape-top.png" alt="shape">
+                            </div>
+                            <div class="shape-bottom">
+                                <img src="assets/images/shape/offter-item-shape-bottom.png" alt="shape">
+                            </div>
+                            <div class="offer__icon">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 34H32M8 34V8L18 2L28 8V34M14 34V26H22V34M14 12H14.01M22 12H22.01M14 18H14.01M22 18H22.01" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-white mt-20">Ticari İnşaat</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">
+                        <div class="offer__item">
+                            <div class="shape-top">
+                                <img src="assets/images/shape/offter-item-shape-top.png" alt="shape">
+                            </div>
+                            <div class="shape-bottom">
+                                <img src="assets/images/shape/offter-item-shape-bottom.png" alt="shape">
+                            </div>
+                            <div class="offer__icon">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 4V32M18 4L8 14H28L18 4ZM4 32H32" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-white mt-20">Renovasyon</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="300ms"
+                        data-wow-duration="1500ms">
+                        <div class="offer__item">
+                            <div class="shape-top">
+                                <img src="assets/images/shape/offter-item-shape-top.png" alt="shape">
+                            </div>
+                            <div class="shape-bottom">
+                                <img src="assets/images/shape/offter-item-shape-bottom.png" alt="shape">
+                            </div>
+                            <div class="offer__icon">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 30L30 30M6 30V20L12 14V30M18 30V10L24 4V30M24 30V4L30 10V30" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-white mt-20">Proje Yönetimi</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="400ms"
+                        data-wow-duration="1500ms">
+                        <div class="offer__item">
+                            <div class="shape-top">
+                                <img src="assets/images/shape/offter-item-shape-top.png" alt="shape">
+                            </div>
+                            <div class="shape-bottom">
+                                <img src="assets/images/shape/offter-item-shape-bottom.png" alt="shape">
+                            </div>
+                            <div class="offer__icon">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 32H32M8 32V16H14V32M16 32V8H22V32M24 32V20H30V32" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-white mt-20">Altyapı</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 wow bounceInUp" data-wow-delay="500ms"
+                        data-wow-duration="1500ms">
+                        <div class="offer__item">
+                            <div class="shape-top">
+                                <img src="assets/images/shape/offter-item-shape-top.png" alt="shape">
+                            </div>
+                            <div class="shape-bottom">
+                                <img src="assets/images/shape/offter-item-shape-bottom.png" alt="shape">
+                            </div>
+                            <div class="offer__icon">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 4L4 12V24L18 32L32 24V12L18 4ZM18 4V32M4 12L32 12" stroke="#C9A227" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-white mt-20">Mimari Tasarım</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Offer area end here -->
+
+        <!-- Brand area start here -->
+        <div class="brand-area">
+            <div class="container">
+                <div class="brand__wrp">
+                    <div class="brand__shape">
+                        <img src="assets/images/shape/brand-shape.png" alt="">
+                    </div>
+                    <div class="swiper brand__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="brand__image image">
+                                    <img src="photo/about/logo2.webp" alt="Otocom">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__image image">
+                                    <img src="photo/about/Turkcell_logo.png" alt="Turkcell">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__image image">
+                                    <img src="photo/about/MetLife_logo.svg.png" alt="MetLife">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="brand__image image">
+                                    <img src="photo/about/Coca-Cola_İçecek_logo.png" alt="Coca Cola İçecek">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand area end here -->
+
+        <!-- Process area start here -->
+        <section class="process-area pt-120 pb-120">
+            <div class="container">
+                <div class="section-header text-center mb-60">
+                    <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        
+                        PROJE SÜRECİ
+                    </h5>
+                    <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Planlama'dan Anahtar Teslime
+                    </h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="process__item mb-100">
+                            <div class="process-arry bobble__animation">
+                                <img src="assets/images/process/process-arry.png" alt="arry-icon">
+                            </div>
+                            <div class="process__image">
+                                <img src="photo/index/ux-indonesia-8mikJ83LmSQ-unsplash.jpg" alt="image">
+                                <span class="process-number">1</span>
+                            </div>
+                            <div class="process__content">
+                                <h4 class="mt-25 mb-10">
+                                    Tasarım & Planlama
+                                </h4>
+                                <p>Uzman mühendis ve tasarım ekibimizle projenizi titizlikle planlıyor, 
+                                    ihtiyaçlarınıza en uygun çözümleri belirliyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="process__item mb-100">
+                            <div class="process-arry bobble__animation">
+                                <img src="assets/images/process/process-arry.png" alt="arry-icon">
+                            </div>
+                            <div class="process__image">
+                                <img src="photo/index/amelie-mourichon-sv8oOQaUb-o-unsplash.jpg" alt="image">
+                                <span class="process-number">2</span>
+                            </div>
+                            <div class="process__content">
+                                <h4 class="mt-25 mb-10">
+                                    İnşaat & Uygulama
+                                </h4>
+                                <p>Çağdaş mimari yaklaşımları ileri teknolojiyle birleştirerek,
+                                    fonksiyonel ve dayanıklı yapılar inşa ediyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                        <div class="process__item">
+                            <div class="process__image">
+                                <img src="photo/index/charlesdeluvio-pjAH2Ax4uWk-unsplash.jpg" alt="image">
+                                <span class="process-number">3</span>
+                            </div>
+                            <div class="process__content">
+                                <h4 class="mt-25 mb-10">
+                                    Anahtar Teslim
+                                </h4>
+                                <p>Proje yönetiminden teslimine kadar tüm süreçlerde şeffaf iletişim
+                                    ve yüksek standartlarla hizmet veriyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Process area end here -->
+
+        <!-- Testimonial area start here -->
+        <section class="testimonial-area bg-image pt-120 pb-120" data-background="">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="talk-us__item">
+                            <div class="section-header mb-30">
+                                <h5 class="text-white">
+                                    BİZE ULAŞIN
+                                </h5>
+                                <h2 class="text-white">Size Nasıl Yardımcı Olabiliriz?</h2>
+                            </div>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="name">Adınız Soyadınız</label>
+                                        <input id="name" class="bg-transparent bor" type="text"
+                                            placeholder="Adınız Soyadınız">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="email">E-posta Adresiniz</label>
+                                        <input class="bg-transparent bor" id="email" type="email"
+                                            placeholder="E-posta Adresiniz">
+                                    </div>
+                                </div>
+                                <div class="text-area">
+                                    <label for="massage">Mesajınızı Yazın</label>
+                                    <textarea class="bg-transparent bor" id="massage"
+                                        placeholder="Mesajınızı Yazın"></textarea>
+                                </div>
+                                <div class="btn-two">
+                                    <span class="btn-circle">
+                                    </span>
+                                    <a href="#" class="btn-one">Mesajı Gönder <i
+                                            class="fa-regular fa-arrow-right-long"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-2 ps-lg-5">
+                        <div class="section-header mb-40">
+                            <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                
+                                DEĞERLERİMİZ
+                            </h5>
+                            <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Güvenilirlik, Kalite ve Müşteri Memnuniyeti</h2>
+                            <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">BEF Yapı Design olarak kurulduğumuz günden bu yana sürdürülebilirlik, güvenilirlik ve müşteri memnuniyetini temel ilke edindik. Her adımımızda profesyonellik, tecrübe ve tasarım gücümüzü yansıtarak inşaat sektöründe kalıcı fark yaratıyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial area end here -->
+    </main>
+
+    <!-- Footer area start here -->
+    <footer class="footer-area">
+        <div class="footer__shape-regular-left wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <img src="assets/images/shape/footer-regular-left.png" alt="shape">
+        </div>
+        <div class="footer__shape-solid-left wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <img class="sway_Y__animation" src="assets/images/shape/footer-solid-left.png" alt="shape">
+        </div>
+        <div class="footer__shape-solid-right wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <img class="sway_Y__animation" src="assets/images/shape/footer-regular-right.png" alt="shape">
+        </div>
+        <div class="footer__shape-regular-right wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <img src="assets/images/shape/footer-solid-right.png" alt="shape">
+        </div>
+        <div class="footer__shadow-shape">
+            <img src="assets/images/shape/footer-shadow-shape.png" alt="shodow">
+        </div>
+        <div class="container">
+            <div class="footer__wrp pt-100 pb-100">
+                <div class="footer__item item-big wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    <a href="index.html" class="logo mb-30">
+                        <img src="assets/images/logo/logo.png" alt="BEF Yapı Design Logo">
+                    </a>
+                    <p>Kalite, estetik ve mühendisliği bir araya getirerek modern yaşam alanları oluşturan yenilikçi bir inşaat ve tasarım firmasıyız.</p>
+                    
+                </div>
+                <div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <h3 class="footer-title">SAYFALAR</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-regular fa-angles-right me-1"></i> Ana Sayfa</a></li>
+                        <li><a href="about.html"><i class="fa-regular fa-angles-right me-1"></i> Hakkımızda</a></li>
+                        <li><a href="contact.html"><i class="fa-regular fa-angles-right me-1"></i> İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item item-sm wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                    <h3 class="footer-title">HİZMETLERİMİZ</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fa-regular fa-angles-right me-1"></i> Konut Projeleri</a></li>
+                        <li><a href="about.html"><i class="fa-regular fa-angles-right me-1"></i> Ticari Yapılar</a></li>
+                        <li><a href="about.html"><i class="fa-regular fa-angles-right me-1"></i> İç Mimari</a></li>
+                        <li><a href="about.html"><i class="fa-regular fa-angles-right me-1"></i> Tadilat</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item item-big wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                    <h3 class="footer-title">İLETİŞİM</h3>
+                    <p class="mb-20">İstanbul, Türkiye</p>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+                            <div class="info">
+                                <h5>
+                                    Çalışma Saatleri:
+                                </h5>
+                                <p>Pzt - Cuma: 08:00 - 18:00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-duotone fa-phone"></i>
+                            <div class="info">
+                                <h5>
+                                    Telefon Numaraları:
+                                </h5>
+                                <p>+90 212 555 5555, +90 532 555 5555</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="container">
+                <div
+                    class="d-flex gap-1 flex-wrap align-items-center justify-content-md-between justify-content-center">
+                    <p class="wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">&copy; 2024 <a href="#0">BEF YAPI DESIGN</a> - Tüm Hakları Saklıdır</p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer area end here -->
+
+    <!-- Back to top area start here -->
+    <div class="scroll-up">
+        <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Back to top area end here -->
+
+    <!-- Jquery 3.7.0 Min Js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap min Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Mean menu Js -->
+    <script src="assets/js/meanmenu.js"></script>
+    <!-- Swiper bundle min Js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Counterup min Js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Wow min Js -->
+    <!-- <script src="assets/js/wow.min.js"></script> -->
+    <!-- Pace min Js -->
+    <script src="assets/js/pace.min.js"></script>
+    <!-- Magnific popup min Js -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- Nice select min Js -->
+    <script src="assets/js/nice-select.min.js"></script>
+    <!-- Isotope pkgd min Js -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Waypoints Js -->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!-- Script Js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
