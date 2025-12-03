@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style-v6.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -137,31 +139,38 @@
                                 </h5>
                                 <h2 class="text-white">Size Nasıl Yardımcı Olabiliriz?</h2>
                             </div>
-                            <form action="#">
+                            <form id="contact-form">
                                 <div class="row">
                                     <div class="col-6">
                                         <label for="name">Adınız Soyadınız</label>
-                                        <input id="name" class="bg-transparent bor" type="text"
-                                            placeholder="Adınız Soyadınız">
+                                        <input id="name" name="name" class="bg-transparent bor" type="text"
+                                            placeholder="Adınız Soyadınız" required>
                                     </div>
                                     <div class="col-6">
                                         <label for="email">E-posta Adresiniz</label>
-                                        <input class="bg-transparent bor" id="email" type="email"
-                                            placeholder="E-posta Adresiniz">
+                                        <input class="bg-transparent bor" id="email" name="email" type="email"
+                                            placeholder="E-posta Adresiniz" required>
                                     </div>
                                 </div>
                                 <div class="text-area">
-                                    <label for="massage">Mesajınızı Yazın</label>
-                                    <textarea class="bg-transparent bor" id="massage"
-                                        placeholder="Mesajınızı Yazın"></textarea>
+                                    <label for="message">Mesajınızı Yazın</label>
+                                    <textarea class="bg-transparent bor" id="message" name="message"
+                                        placeholder="Mesajınızı Yazın" required></textarea>
                                 </div>
                                 <div class="btn-two">
                                     <span class="btn-circle">
                                     </span>
-                                    <a href="#" class="btn-one">Mesajı Gönder <i
-                                            class="fa-regular fa-arrow-right-long"></i></a>
+                                    <button type="submit" class="btn-one" style="border: none; cursor: pointer;">Mesajı Gönder <i
+                                            class="fa-regular fa-arrow-right-long"></i></button>
                                 </div>
                             </form>
+                            
+                            <!-- Başarı mesajı -->
+                            <div id="success-message" style="display: none; background: #28a745; color: white; padding: 20px; border-radius: 10px; margin-top: 20px; text-align: center;">
+                                <i class="fa-solid fa-check-circle" style="font-size: 24px; margin-bottom: 10px;"></i>
+                                <h4>Mesajınız Başarıyla Gönderildi!</h4>
+                                <p>En kısa sürede sizinle iletişime geçeceğiz.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 ps-2 ps-lg-5">
@@ -304,6 +313,48 @@
     <script src="assets/js/jquery.waypoints.js"></script>
     <!-- Script Js -->
     <script src="assets/js/script.js"></script>
+    
+    <!-- EmailJS Config (bu dosya .gitignore'da) -->
+    <script src="assets/js/emailjs-config.js"></script>
+    
+    <!-- EmailJS Form Script -->
+    <script>
+        // EmailJS'i başlat
+        emailjs.init(EMAILJS_CONFIG.publicKey);
+        
+        // Form gönderimi
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Butonu devre dışı bırak
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Gönderiliyor... <i class="fa-solid fa-spinner fa-spin"></i>';
+            submitBtn.disabled = true;
+            
+            // Form verilerini hazırla
+            const templateParams = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                title: 'BEF YAPI İletişim'
+            };
+            
+            // EmailJS ile gönder
+            emailjs.send(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.templateId, templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    // Başarı mesajını göster
+                    document.getElementById('contact-form').style.display = 'none';
+                    document.getElementById('success-message').style.display = 'block';
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Mesaj gönderilemedi. Lütfen tekrar deneyin.');
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
 </body>
 
 </html>
