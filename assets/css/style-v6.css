@@ -3595,7 +3595,7 @@ input.main-search-input::placeholder {
   width: 100%;
   max-width: 80px;
   border-radius: 0;
-  background-color: var(--primary10);
+  background-color: transparent;
 }
 .about__info {
   position: relative;
@@ -5042,6 +5042,26 @@ input.main-search-input::placeholder {
 
 .contact__left-item {
   padding: 50px;
+  height: auto;
+  min-height: fit-content;
+}
+.contact__left-item h3,
+.contact__left-item p {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+.contact__left-item ul li div {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+.contact__left-item ul li div span,
+.contact__left-item ul li div h3,
+.contact__left-item ul li div h3 a {
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 .contact__left-item ul li {
   margin-bottom: 30px;
@@ -5750,7 +5770,9 @@ h3.footer-title {
 
 /* About bölümü */
 .about__right-item {
-  background-color: #ffffff !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .about__right-item h4 {
